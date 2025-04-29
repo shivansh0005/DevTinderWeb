@@ -12,6 +12,9 @@
 ->Create Browser Router >Routes>Route=/Body >RouteChildren
 ->Create an Outlet in Your Body Component
 ->Created a footer
+->Create a Login component
+
+
 
 Body
     NavBar
@@ -20,3 +23,18 @@ Body
     Route=/Login=>Login
     Route=/connections=>Connection
     Route=/profile=>Profile
+
+# DevTinder UI - Part 2
+
+->Create  Login Page.
+->Install Axios
+->Cors->Install cors in backend=>add  middleware to app.js with configration {origin and creds true}
+
+->Install Redux Toolkit
+->install react-redux + @reduxjs/toolkit=>configureStore=>Provider=>createSlice=>add reducer to store
+
+-Added Redeux DevTools in Chrome
+->Login and see if your data is coming Properly  in store
+->Navbar Should update as soon as user loges in
+
+->Refractor your code to add constant file and  Component folder
