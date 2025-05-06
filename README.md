@@ -38,3 +38,12 @@ Body
 ->Navbar Should update as soon as user loges in
 
 ->Refractor your code to add constant file and  Component folder
+
+# DevTinder Ui-Part 3
+
+->You should Not be able to access other routes without Login
+->If token is not present redicrect user to login page
+->Logout
+->Profile
+->Get the feed and add the feed in the store
+->Build user card for thr feed
