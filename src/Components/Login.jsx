@@ -24,8 +24,11 @@ email,password
   },{withCredentials:true});
 
   dispatch(addUser(res.data))
-  // localStorage.setItem("user", JSON.stringify(res.data));
-  return navigate("/Feed")
+  setTimeout(() => {
+  }, 0);
+  
+  return window.location.href = "/Feed";
+  // return navigate("/Feed")
 } 
 
 catch(err){

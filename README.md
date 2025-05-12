@@ -13,6 +13,9 @@
 ->Create an Outlet in Your Body Component
 ->Created a footer
 ->Create a Login component
+->Edit profile
+->Show toast message on save of profile
+->See all my connection
 
 
 
@@ -47,3 +50,8 @@ Body
 ->Profile
 ->Get the feed and add the feed in the store
 ->Build user card for thr feed
+
+# DevTinder UI-part -4
+
+Page to see all my connection request
+page to see all my connecions
