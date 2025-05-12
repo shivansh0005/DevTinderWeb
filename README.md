@@ -55,3 +55,8 @@ Body
 
 Page to see all my connection request
 page to see all my connecions
+-feature to accept rejet connection request
+Remaning
+->Send or ignore the user card from feed
+->Signup New user
+->E2E testing
