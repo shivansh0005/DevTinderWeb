@@ -12,7 +12,7 @@ const EditProfile = ({ user }) => {
   const [lastName, setLastName] = useState(user.lastName);
   const [age, setAge] = useState(user.age);
   const [gender, setGender] = useState(user.gender);
-  const [about, setAbout] = useState(user.About);
+  const [about, setabout] = useState(user.about);
   const [error, setError] = useState();
   const [photoUrl, setPhotoUrl] = useState(user.photoUrl);
   const [showToast,setshowToast]=useState(false);
@@ -97,13 +97,13 @@ setError(err.message);
 
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text text-white">About</span>
+                <span className="label-text text-white">about</span>
               </label>
               <textarea
                 value={about}
                 placeholder="Tell us about yourself"
                 className="textarea textarea-bordered w-full"
-                onChange={(e) => setAbout(e.target.value)}
+                onChange={(e) => setabout(e.target.value)}
               />
             </div>
 
