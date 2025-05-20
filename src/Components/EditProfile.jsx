@@ -13,6 +13,8 @@ const EditProfile = ({ user }) => {
   const [age, setAge] = useState(user.age);
   const [gender, setGender] = useState(user.gender);
   const [about, setabout] = useState(user.about);
+  // const [about, setabout] = useState(user.About || user.about || "");
+
   const [error, setError] = useState();
   const [photoUrl, setPhotoUrl] = useState(user.photoUrl);
   const [showToast,setshowToast]=useState(false);
@@ -145,6 +147,8 @@ setError(err.message);
       {/* User Card Section */}
       <div className="card bg-base-300 w-full max-w-sm shadow-lg p-6 rounded-lg">
         <UserCard user={{ firstName, lastName, age, gender, about, photoUrl }} />
+       
+
       </div>
     </div>
 

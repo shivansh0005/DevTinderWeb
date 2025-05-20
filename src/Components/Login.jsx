@@ -121,7 +121,7 @@ const Login = () => {
   const [gender, setGender] = useState("male");
   const [skills, setSkills] = useState([]);
   const [photoUrl, setPhotoUrl] = useState("");
-  const [about, setAbout] = useState("");
+  const [About, setAbout] = useState("");
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(true);
 
@@ -147,7 +147,7 @@ const Login = () => {
           gender,
           skills,
           photoUrl,
-          About: about,
+          About: About,
         }, { withCredentials: true });
          
       }
@@ -257,7 +257,7 @@ const Login = () => {
                 </label>
                 <textarea
                   className="textarea textarea-bordered"
-                  value={about}
+                  value={About}
                   placeholder="Tell something about yourself"
                   onChange={(e) => setAbout(e.target.value)}
                 />

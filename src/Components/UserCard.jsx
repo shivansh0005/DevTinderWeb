@@ -5,10 +5,12 @@ import { useDispatch } from 'react-redux';
 import { removeUserFromFeed } from '../utils/feedSlice';
 
 const UserCard = ({user}) => {
-  console.log(user.firstName);
+  console.log(user);
   
-  console.log(user.about);
-  const {firstName, lastName, age, photoUrl,gender,About,_id} = user;
+  
+  const {firstName, lastName, age, photoUrl,gender,About,about,_id} = user;
+  const aboutText = about || About || "Hey there! Connect with me to know more about me";
+  console.log(user.About||About);
 const dispatch=useDispatch();
   const handleSentRequest=async(status,userId)=>{
   
@@ -39,7 +41,7 @@ catch(err){
   <div className="card-body">
     <h2 className="card-title">{firstName}</h2>
     { age && gender &&<p>{age+","+gender}</p> }
-    <p>{About}</p>
+    <p>{aboutText}</p>
   
     <div className="card-actions justify-center m-4">
     <button className="btn btn-primary"onClick={()=>handleSentRequest("ignored",_id)}>Ignore</button>
